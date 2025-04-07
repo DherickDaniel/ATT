@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale1.0">
+
+        <title>Site Responsivo com Flexbox</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                text-align: center;
+            }
+
+            header {
+                background: #333;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                font-size: 24px;
+            }
+
+            main {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 800px;
+                margin: 100px auto;
+                padding: 10px;
+                background-color: aquamarine;
+            }
+
+            .box {
+                background: cornflowerblue;
+                padding: 20px;
+                width: 20%;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+            footer {
+                background: #222;
+                color: white;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .item {
+                width: 48%;
+                background: white;
+                padding: 20px;           
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+
+            .banner {
+             background-image: url('C:\Users\Dherick\Desktop\codes\assets\arcondicionadoLG.webp');
+             background-size: cover;
+             background-position: center;
+             width: 100%;
+             height: 100vh;
+            }
+
+            @media screen and (max-width: 768px) {
+                .item {
+                    width: 100%;
+                }
+
+                .banner {
+             background-image: url('C:\Users\Dherick\Desktop\codes\assets\arcondicionadoLG.webp');
+             height: 50vh;
+                }
+            }
+            
+
+            @media (max-width: 600px) {
+             header {
+                 font-size: 18px;
+                 padding: 15px;
+             }
+ 
+             .container {
+                 flex-direction: column;
+                 align-items: center;
+                 display: flex;
+             }
+ 
+             .box {
+                 width: 90%;
+             }
+         }
+
+         @media (max-width: 1024px) and (min-width: 601px) {
+             .container {
+                 flex-wrap: wrap;
+                 flex-direction: column;
+                 align-items: center;
+             }
+ 
+             .box {
+                 width: 45%;
+             }
+         }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="menu">
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </div>
+
+            <main>
+
+            <div class="container">
+                <h1>Daniel Ar Condicionado</h1>
+              <br>
+                <p>Instalação, Manutenção, Limpeza, Serviços no Geral</p>
+              <br>
+                    <div class="box">Seção 1</div>
+              <br>
+                    <div class="box">Seção 2</div>
+              <br>
+                    <div class="box">Seção 3</div>
+              <br>
+            </div>
+
+        </main>
+
+        <div class="banner">
+            <img src="./assets/carro.jpg"
+            srcset="./assets/carropeq.jpg 480w, C:\Users\Dherick\Desktop\codes\assets\arcondicionadoLG.webp 1024w"
+            sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px,1600px"
+            alt="Imagem responsiva"
+            >
+         </div>
+
+        <footer>© 2025 - Todos os direitos reservados</footer>
+
+    </body>
+
+    </html>
