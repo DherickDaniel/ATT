@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Daniel Ar Condicionado</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="tema-claro">
+<nav>
+  <div class="nav">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="controletema">
+  <button class="mudartema" onclick="tema()">Escuro</button>
+</div>
+
+  <header>
+    <h1>Daniel Ar Condicionado</h1>
+    <p>Instalação, Manutenção, Limpeza, Serviços no Geral</p>
+  </header>
+
+  <main>
+    <div class="botoes">
+      <button onclick="secao(1)">Split</button>
+      <button onclick="secao(2)">Piso-Teto</button>
+      <button onclick="secao(3)">Portáteis</button>
+    </div>
+
+    <section id="secao1" class="galeria">
+      <h2>Seção 1</h2>
+      <div class="imagens">
+        <img src="https://images.samsung.com/is/image/samsung/br-digital-inverter-quente-e-frio-8-polos-12kbtu-ar12msspbgmnaz-147100707?$PD_GALLERY_L_JPG$" alt="Ar 1">
+        <img src="https://cdn.leroymerlin.com.br/products/ar_condicionado_split_frio_9000_btus_220v_inverter_voice_lg_3378774920_77f8_1800x1800.jpg" alt="Ar 2">
+        <img src="https://imgs.pontofrio.com.br/1001175437/1xg.jpg" alt="Ar 3">
+      </div>
+    </section>
+
+    <section id="secao2" class="galeria hidden">
+      <h2>Seção 2</h2>
+      <div class="imagens">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.PzWDNNfkDKXc0_CQDtOhxgHaEB&pid=Api&P=0&h=180" alt="Ar 4">
+        <img src="https://d2rxu36vkvaivj.cloudfront.net/Custom/Content/Products/88/49/8849_ar-condicionado-piso-teto-inverter-tcl-36000-btus-frio-220v_z2_638169135293108986.jpg" alt="Ar 5">
+        <img src="https://www.climagel.com.br/wp-content/uploads/2015/05/Instalacao-em-Ar-Condicionado-Piso-Teto-Elgin.png" alt="Ar 6">
+      </div>
+    </section>
+
+    <section id="secao3" class="galeria hidden">
+      <h2>Seção 3</h2>
+      <div class="imagens">
+        <img src="https://friopecas.vteximg.com.br/arquivos/ids/159725-600-600/106593-Ar-Condicionado-Portatil-Midea-10500-BTUs-Frio-127v-Tango--1-.jpg?v=635729876244130000" alt="Ar 7">
+        <img src="https://files.tecnoblog.net/wp-content/uploads/2020/10/ar-condicionado-portatil-vale-a-pena-lg-7.jpg" alt="Ar 8">
+        <img src="https://i.ytimg.com/vi/BQLDThzm0Ak/maxresdefault.jpg" alt="Ar 9">
+      </div>
+    </section>
+
+    <div class="servicos">
+      <h2>Serviços</h2>
+      <div class="botoes">
+        <button>Instalação</button>
+        <button>Manutenção</button>
+        <button>Limpeza</button>
+        <button>Recomendações</button>
+      </div>
+    </div>
+
+    <div class="calculadora">
+      <h2>Calcular BTUs Necessários</h2>
+      <label for="metros">Informe a área do cômodo (m²):</label>
+      <input type="number" id="metros" min="1" />
+      <button onclick="calcularBTUS()">Calcular</button>
+      <p id="resultado"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Daniel Ar Condicionado - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

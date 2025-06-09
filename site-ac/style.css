@@ -1,0 +1,218 @@
+:root {
+  --bg-color: LightBlue;
+  --text-color: #002b36;
+  --accent-color: DodgerBlue;
+  --card-bg: SkyBlue;
+  --hover-accent: RoyalBlue;
+}
+
+body.tema-escuro {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #007acc;
+  --card-bg: #1f1f1f;
+  --hover-accent: #333;
+}
+
+body.tema-claro {
+  --bg-color: LightBlue;
+  --text-color: #002b36;
+  --accent-color: DodgerBlue;
+  --card-bg: SkyBlue;
+  --hover-accent: RoyalBlue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: var(--card-bg);
+  padding: 10px 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.controletema {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: var(--bg-color);
+}
+
+.mudartema {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.mudartema:hover {
+  background-color: var(--hover-accent);
+}
+
+header {
+  background-color: var(--card-bg);
+  padding: 20px;
+  text-align: center;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 15px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.botoes button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botoes button:hover {
+  background-color: #008ba3;
+}
+
+.galeria {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.galeria h2 {
+  margin-bottom: 10px;
+}
+
+.imagens {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.imagens img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid var(--card-bg);
+  border-radius: 10px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.imagens img:hover {
+  transform: scale(1.05);
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.servicos {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.servicos h2 {
+  margin-bottom: 15px;
+}
+
+.calculadora {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 400px;
+}
+
+.calculadora input {
+  padding: 8px;
+  margin-top: 5px;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.calculadora button {
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calculadora button:hover {
+  background-color: #008ba3;
+}
+
+.calculadora #resultado {
+  margin-top: 15px;
+  font-size: 18px;
+  color: green;
+}
