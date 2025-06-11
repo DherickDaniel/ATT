@@ -1,0 +1,51 @@
+CREATE DATABASE biblioteca;
+
+USE biblioteca;
+
+CREATE TABLE livros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    autor VARCHAR(255) NOT NULL,
+    ano_publicacao INT,
+    disponivel BOOLEAN DEFAULT TRUE
+);
+
+http://localhost:3000/livros
+
+[
+	{
+		"id": 1,
+		"titulo": "Menino Maluquinho",
+		"autor": "Ziraldo",
+		"ano_publicacao": 1980,
+		"disponivel": 1
+	},
+	{
+		"id": 2,
+		"titulo": "Um Diário De Um Banana",
+		"autor": "Miguel de Cervantes",
+		"ano_publicacao": 1612,
+		"disponivel": 1
+	},
+	{
+		"id": 3,
+		"titulo": "Le Petit Prince",
+		"autor": "Antoine de Saint-Exupéry",
+		"ano_publicacao": 1943,
+		"disponivel": 1
+	},
+	{
+		"id": 4,
+		"titulo": "Dom Quixote",
+		"autor": "Miguel de Cervantes",
+		"ano_publicacao": 1612,
+		"disponivel": 1
+	},
+	{
+		"id": 6,
+		"titulo": "Harry Potter e a Pedra Filosofal",
+		"autor": "J. K. Rowling",
+		"ano_publicacao": 1997,
+		"disponivel": 1
+	}
+]
